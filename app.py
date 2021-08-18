@@ -1,4 +1,3 @@
-from datetime import datetime
 import pandas as pd
 import streamlit as st
 from nsepy import get_history
@@ -6,7 +5,7 @@ import plotly.graph_objects as go
 
 st.title('Stock Visualizer')
 with st.form(key='form'):
-    symbol = st.text_input('Enter the Symbol of the stock to visalize')
+    symbol = st.text_input('Enter the name or symbol of the stock to visalize')
     start_date = st.date_input('Select the start date')
     end_date = st.date_input('Select the end date')
 
